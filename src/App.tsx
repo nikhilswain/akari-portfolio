@@ -1,7 +1,9 @@
+import Home from "./components/Home";
+
 function App() {
   return (
     <>
-      <h1 className="text-blue-500">Karnika's Portfolio</h1>
+      <Home />
     </>
   );
 }
