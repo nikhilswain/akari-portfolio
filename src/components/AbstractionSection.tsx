@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 
-import sculpture1 from "@/assets/sculpture-1.jpg";
-import sculpture2 from "@/assets/sculpture-2.jpg";
-import sculpture3 from "@/assets/sculpture-3.jpg";
-import sculpture4 from "@/assets/sculpture-4.jpg";
+// import sculpture1 from "@/assets/sculpture-1.jpg";
+// import sculpture2 from "@/assets/sculpture-2.jpg";
+// import sculpture3 from "@/assets/sculpture-3.jpg";
+// import sculpture4 from "@/assets/sculpture-4.jpg";
+
+import sculpture1 from "@/assets/placeholder.png";
+import sculpture2 from "@/assets/placeholder.png";
+import sculpture3 from "@/assets/placeholder.png";
+import sculpture4 from "@/assets/placeholder.png";
 
 const AbstractionSection = () => {
   return (

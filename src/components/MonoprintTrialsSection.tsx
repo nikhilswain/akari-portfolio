@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 
-import monoprintMain from "@/assets/monoprint-main.jpg";
-import trial1 from "@/assets/monoprint-trial1.jpg";
-import trial2 from "@/assets/monoprint-trial2.jpg";
-import trial3 from "@/assets/monoprint-trial3.jpg";
-import trial4 from "@/assets/monoprint-trial4.jpg";
+// import monoprintMain from "@/assets/monoprint-main.jpg";
+// import trial1 from "@/assets/monoprint-trial1.jpg";
+// import trial2 from "@/assets/monoprint-trial2.jpg";
+// import trial3 from "@/assets/monoprint-trial3.jpg";
+// import trial4 from "@/assets/monoprint-trial4.jpg";
+
+import monoprintMain from "@/assets/placeholder.png";
+import trial1 from "@/assets/placeholder.png";
+import trial2 from "@/assets/placeholder.png";
+import trial3 from "@/assets/placeholder.png";
+import trial4 from "@/assets/placeholder.png";
 
 interface Trial {
   image: string;

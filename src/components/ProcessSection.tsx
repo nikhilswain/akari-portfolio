@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 
-import processSketch from "@/assets/process-sketch.jpg";
-import processDigital from "@/assets/process-digital.jpg";
-import processClay1 from "@/assets/process-clay1.jpg";
-import processClay2 from "@/assets/process-clay2.jpg";
+// import processSketch from "@/assets/process-sketch.jpg";
+// import processDigital from "@/assets/process-digital.jpg";
+// import processClay1 from "@/assets/process-clay1.jpg";
+// import processClay2 from "@/assets/process-clay2.jpg";
+
+import processSketch from "@/assets/placeholder.png";
+import processDigital from "@/assets/placeholder.png";
+import processClay1 from "@/assets/placeholder.png";
+import processClay2 from "@/assets/placeholder.png";
 
 const steps = [
   "Sketching a bull.",

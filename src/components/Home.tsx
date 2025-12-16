@@ -9,13 +9,21 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 // Import artwork images
-import stillLife1 from "@/assets/still-life-1.jpg";
-import stillLife2 from "@/assets/still-life-2.jpg";
-import portrait1 from "@/assets/portrait-1.jpg";
-import portrait2 from "@/assets/portrait-2.jpg";
-import sketch1 from "@/assets/sketch-1.jpg";
-import sketch2 from "@/assets/sketch-2.jpg";
-import streetPainting from "@/assets/street-painting.jpg";
+// import stillLife1 from "@/assets/still-life-1.jpg";
+// import stillLife2 from "@/assets/still-life-2.jpg";
+// import portrait1 from "@/assets/portrait-1.jpg";
+// import portrait2 from "@/assets/portrait-2.jpg";
+// import sketch1 from "@/assets/sketch-1.jpg";
+// import sketch2 from "@/assets/sketch-2.jpg";
+// import streetPainting from "@/assets/street-painting.jpg";
+
+import stillLife1 from "@/assets/placeholder.png";
+import stillLife2 from "@/assets/placeholder.png";
+import portrait1 from "@/assets/placeholder.png";
+import portrait2 from "@/assets/placeholder.png";
+import sketch1 from "@/assets/placeholder.png";
+import sketch2 from "@/assets/placeholder.png";
+import streetPainting from "@/assets/placeholder.png";
 
 const Home = () => {
   return (

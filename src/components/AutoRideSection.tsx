@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 
-import autoRideMain from "@/assets/auto-ride-main.jpg";
-import autoRide2 from "@/assets/auto-ride-2.jpg";
-import autoRide3 from "@/assets/auto-ride-3.jpg";
-import autoRide4 from "@/assets/auto-ride-4.jpg";
+// import autoRideMain from "@/assets/auto-ride-main.jpg";
+// import autoRide2 from "@/assets/auto-ride-2.jpg";
+// import autoRide3 from "@/assets/auto-ride-3.jpg";
+// import autoRide4 from "@/assets/auto-ride-4.jpg";
+
+import autoRideMain from "@/assets/placeholder.png";
+import autoRide2 from "@/assets/placeholder.png";
+import autoRide3 from "@/assets/placeholder.png";
+import autoRide4 from "@/assets/placeholder.png";
 
 const AutoRideSection = () => {
   return (

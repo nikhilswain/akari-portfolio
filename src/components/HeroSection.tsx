@@ -22,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-muted-foreground text-sm md:text-base tracking-[0.3em] uppercase mb-6"
         >
-          Visual Artist
+          Artist
         </motion.p>
 
         <motion.h1
@@ -31,8 +31,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-8"
         >
-          <span className="block text-primary">Art</span>
-          <span className="block gradient-text">Portfolio</span>
+          <span className="block gradient-text">Karnika</span>
+          <span className="block text-primary">Sri</span>
         </motion.h1>
 
         <motion.p
