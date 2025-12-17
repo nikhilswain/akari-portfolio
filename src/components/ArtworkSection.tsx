@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 interface Artwork {
@@ -11,7 +12,7 @@ interface ArtworkSectionProps {
   title: string;
   description: string;
   artworks: Artwork[];
-  layout?: "grid" | "featured" | "asymmetric";
+  layout?: "grid" | "featured" | "asymmetric" | "flex";
 }
 
 const ArtworkSection = ({
@@ -24,7 +25,13 @@ const ArtworkSection = ({
   return (
     <section id={id} className="py-16 md:py-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
+        <div
+          className={cn(
+            layout === "flex"
+              ? ""
+              : "grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12"
+          )}
+        >
           {/* Artworks Grid */}
           <div
             className={`${
@@ -40,14 +47,15 @@ const ArtworkSection = ({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.15 }}
-                    className="artwork-container"
                   >
-                    <img
-                      src={artwork.image}
-                      alt={artwork.caption}
-                      className="artwork-image aspect-[4/5] rounded-sm"
-                    />
-                    <p className="caption-text mt-3">{artwork.caption}</p>
+                    <div className="artwork-container">
+                      <img
+                        src={artwork.image}
+                        alt={artwork.caption}
+                        className="artwork-image aspect-4/5 rounded-sm"
+                      />
+                    </div>
+                    <p className="caption-text mt-4">{artwork.caption}</p>
                   </motion.div>
                 ))}
               </div>
@@ -120,6 +128,30 @@ const ArtworkSection = ({
           </div>
         </div>
       </div>
+
+      {layout === "flex" && (
+        <div className="flex flex-wrap gap-4 mt-4 ">
+          {artworks.map((artwork, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="md:flex-1"
+            >
+              <div className="artwork-container">
+                <img
+                  src={artwork.image}
+                  alt={artwork.caption}
+                  className="artwork-image rounded-sm"
+                />
+              </div>
+              <p className="caption-text mt-4">{artwork.caption}</p>
+            </motion.div>
+          ))}
+        </div>
+      )}
     </section>
   );
 };

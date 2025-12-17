@@ -87,7 +87,7 @@ const MonoprintTrialsSection = () => {
               printmaking. I've used watercolour monoprinting to illustrate an
               old park I used to visit as a child from memory. I believe the
               fluidity and imperfection of the medium helped me capture the
-              nostalgic tone.
+              nostalgic tone
             </p>
           </motion.div>
 

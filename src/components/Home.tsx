@@ -39,7 +39,7 @@ const Home = () => {
       <ArtworkSection
         id="still-life"
         title="Still Life Drawing:"
-        description="I've used graphite pencils to draw these observational drawings of objects around my house. I've set up the objects according to the pictures I found online, focusing on light, shadow, and the subtle gradations that bring everyday objects to life."
+        description="I've used graphite pencils to draw these observational drawings of objects around my house. I've set up the objects according to the pictures I found online."
         artworks={[
           { image: stillLife1, caption: "A4 - Pencil drawing" },
           { image: stillLife2, caption: "A4 - Pencil drawing" },
@@ -52,10 +52,10 @@ const Home = () => {
       <ArtworkSection
         id="portraits"
         title="Portraits:"
-        description="Drawing the human face from observation is a meticulous task, especially while balancing values to not only portray the image but also emotions such as happiness, wisdom, and contemplation. Each portrait tells a story of the subject's inner world."
+        description="Drawing the human face from observation is a meticulous task, especially while balancing values to not only portray the image but also emotions such as happiness."
         artworks={[
-          { image: portrait2, caption: "A4 – Pencil drawing" },
-          { image: portrait1, caption: "A4 – Charcoal drawing" },
+          { image: portrait2, caption: "A4 - Pencil drawing" },
+          { image: portrait1, caption: "A4 - Charcoal drawing" },
         ]}
         layout="grid"
       />
@@ -65,12 +65,13 @@ const Home = () => {
       <ArtworkSection
         id="sketches"
         title="Sketching What I See:"
-        description="These are my observational sketches created in my sketchbook during my travels. Quick captures of architectural details, natural landscapes, and urban scenes that caught my eye – each sketch preserving a moment in time."
+        description="These are my observational sketches created in my sketchbook during my travels."
         artworks={[
-          { image: sketch1, caption: "A5 – Ink drawing" },
-          { image: sketch2, caption: "A5 – Ink painting" },
+          { image: sketch1, caption: "A5 - Ink drawing" },
+          { image: sketch2, caption: "A5 - Ink painting" },
+          { image: sketch2, caption: "A5 - Ink and water color" },
         ]}
-        layout="grid"
+        layout="flex"
       />
 
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
@@ -78,12 +79,12 @@ const Home = () => {
       <ArtworkSection
         id="street-art"
         title="The Street That Remembers:"
-        description="Inspired by South Indian temple streets, this artwork captures the presence of historical architecture and how it continues to shape movement, memory, and identity in a modernising environment. The vibrant colors reflect the energy of daily life against ancient structures."
+        description="Inspired by South Indian temple streets, this artwork captures the presence of historical architecture and how it continues to shape movement, memory, and identity in a modernising environment."
         artworks={[
           {
             image: streetPainting,
-            caption: "A3 – Watercolour and gouache painting",
-            size: "Size: 16inch × 20inch",
+            caption: "A3 - Watercolour and gouache painting",
+            size: "Size: 16inch x 20inch",
           },
         ]}
         layout="featured"
