@@ -32,7 +32,7 @@ const HeroSection = () => {
           className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-8"
         >
           <span className="block gradient-text">Karnika</span>
-          <span className="block text-primary">Sri</span>
+          <span className="block text-primary">Srii</span>
         </motion.h1>
 
         <motion.p

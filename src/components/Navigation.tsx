@@ -55,7 +55,7 @@ const Navigation = () => {
               }}
               className="font-serif text-xl md:text-2xl font-semibold text-foreground hover:text-primary transition-colors"
             >
-              Karnika Sri
+              Karnika Srii
             </a>
 
             {/* Desktop Navigation */}

@@ -22,22 +22,16 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             <a
-              href="mailto:artist@email.com"
+              href="mailto:zero@email.com"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Email
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/karnika__srii"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Instagram
-            </a>
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Behance
             </a>
           </div>
         </div>
