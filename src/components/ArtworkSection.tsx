@@ -129,29 +129,31 @@ const ArtworkSection = ({
         </div>
       </div>
 
-      {layout === "flex" && (
-        <div className="flex flex-wrap gap-4 mt-4 ">
-          {artworks.map((artwork, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="md:flex-1"
-            >
-              <div className="artwork-container">
-                <img
-                  src={artwork.image}
-                  alt={artwork.caption}
-                  className="artwork-image rounded-sm"
-                />
-              </div>
-              <p className="caption-text mt-4">{artwork.caption}</p>
-            </motion.div>
-          ))}
-        </div>
-      )}
+      <div className="max-w-7xl mx-auto">
+        {layout === "flex" && (
+          <div className="flex flex-wrap gap-4 mt-4">
+            {artworks.map((artwork, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className="md:flex-1"
+              >
+                <div className="artwork-container">
+                  <img
+                    src={artwork.image}
+                    alt={artwork.caption}
+                    className="artwork-image rounded-sm"
+                  />
+                </div>
+                <p className="caption-text mt-4">{artwork.caption}</p>
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </div>
     </section>
   );
 };

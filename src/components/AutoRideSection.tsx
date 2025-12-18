@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 
-// import autoRideMain from "@/assets/auto-ride-main.jpg";
-// import autoRide2 from "@/assets/auto-ride-2.jpg";
-// import autoRide3 from "@/assets/auto-ride-3.jpg";
-// import autoRide4 from "@/assets/auto-ride-4.jpg";
-
-import autoRideMain from "@/assets/placeholder.png";
-import autoRide2 from "@/assets/placeholder.png";
-import autoRide3 from "@/assets/placeholder.png";
-import autoRide4 from "@/assets/placeholder.png";
+import autoRideMain from "@/assets/auto-ride-main.png";
+import autoRide2 from "@/assets/auto-ride-2.png";
+import autoRide3 from "@/assets/auto-ride-3.png";
+import autoRide4 from "@/assets/auto-ride-4.png";
 
 const AutoRideSection = () => {
   return (
@@ -31,13 +26,15 @@ const AutoRideSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-6 artwork-container"
+            className="lg:col-span-6 lg:sticky lg:top-24 h-fit self-start"
           >
-            <img
-              src={autoRideMain}
-              alt="Linocut printing - Auto Ride"
-              className="artwork-image w-full rounded-sm"
-            />
+            <div className="artwork-container">
+              <img
+                src={autoRideMain}
+                alt="Linocut printing - Auto Ride"
+                className="artwork-image w-full rounded-sm"
+              />
+            </div>
             <div className="flex justify-between mt-3">
               <p className="text-primary text-sm">Linocut Printing</p>
               <p className="text-xs text-muted-foreground">Size: A4</p>
@@ -50,7 +47,7 @@ const AutoRideSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-3 flex items-start"
+            className="lg:col-span-3 flex items-start lg:sticky lg:top-24 h-fit lg:self-start"
           >
             <p className="text-primary/90 leading-relaxed text-sm md:text-base italic">
               This print reflects an auto driver's world, where Kolam lines,
@@ -67,13 +64,15 @@ const AutoRideSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="artwork-container flex-1"
+              className=""
             >
-              <img
-                src={autoRide2}
-                alt="Interior scene linocut"
-                className="artwork-image w-full aspect-square object-cover rounded-sm"
-              />
+              <div className="artwork-container flex-1">
+                <img
+                  src={autoRide2}
+                  alt="Interior scene linocut"
+                  className="artwork-image w-full aspect-square object-cover rounded-sm"
+                />
+              </div>
               <p className="text-xs text-muted-foreground text-right mt-2">
                 Size: A4
               </p>
@@ -84,13 +83,15 @@ const AutoRideSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="artwork-container flex-1"
+              className=""
             >
-              <img
-                src={autoRide3}
-                alt="Birds linocut"
-                className="artwork-image w-full aspect-square object-cover rounded-sm"
-              />
+              <div className="artwork-container flex-1">
+                <img
+                  src={autoRide3}
+                  alt="Birds linocut"
+                  className="artwork-image w-full aspect-square object-cover rounded-sm"
+                />
+              </div>
               <p className="text-xs text-muted-foreground text-right mt-2">
                 Size: A4
               </p>
@@ -101,13 +102,15 @@ const AutoRideSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="artwork-container flex-1"
+              className=""
             >
-              <img
-                src={autoRide4}
-                alt="Archway sketch"
-                className="artwork-image w-full aspect-[4/5] object-cover rounded-sm"
-              />
+              <div className="artwork-container flex-1">
+                <img
+                  src={autoRide4}
+                  alt="Archway sketch"
+                  className="artwork-image w-full aspect-[4/5] object-cover rounded-sm"
+                />
+              </div>
               <p className="text-xs text-muted-foreground text-right mt-2">
                 Size: 10x12 inches
               </p>

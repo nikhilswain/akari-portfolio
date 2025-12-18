@@ -1,16 +1,10 @@
 import { motion } from "framer-motion";
 
-// import monoprintMain from "@/assets/monoprint-main.jpg";
-// import trial1 from "@/assets/monoprint-trial1.jpg";
-// import trial2 from "@/assets/monoprint-trial2.jpg";
-// import trial3 from "@/assets/monoprint-trial3.jpg";
-// import trial4 from "@/assets/monoprint-trial4.jpg";
-
-import monoprintMain from "@/assets/placeholder.png";
-import trial1 from "@/assets/placeholder.png";
-import trial2 from "@/assets/placeholder.png";
-import trial3 from "@/assets/placeholder.png";
-import trial4 from "@/assets/placeholder.png";
+import monoprintMain from "@/assets/monoprint-main.png";
+import trial1 from "@/assets/monoprint-trial1.png";
+import trial2 from "@/assets/monoprint-trial2.png";
+import trial3 from "@/assets/monoprint-trial3.png";
+import trial4 from "@/assets/monoprint-trial4.png";
 
 interface Trial {
   image: string;
@@ -62,13 +56,15 @@ const MonoprintTrialsSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-4 artwork-container"
+            className="lg:col-span-5"
           >
-            <img
-              src={monoprintMain}
-              alt="Watercolour monoprint - Park scene"
-              className="artwork-image w-full rounded-sm"
-            />
+            <div className="artwork-container">
+              <img
+                src={monoprintMain}
+                alt="Watercolour monoprint - Park scene"
+                className="artwork-image w-full rounded-sm  "
+              />
+            </div>
             <p className="text-xs text-muted-foreground mt-3">
               Size: 8inch × 8inch
             </p>
@@ -92,7 +88,7 @@ const MonoprintTrialsSection = () => {
           </motion.div>
 
           {/* Trials Grid */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             {trials.map((trial, index) => (
               <motion.div
                 key={index}
@@ -100,16 +96,17 @@ const MonoprintTrialsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="artwork-container"
               >
                 <p className="text-foreground text-sm font-medium mb-2">
                   {trial.label}
                 </p>
-                <img
-                  src={trial.image}
-                  alt={trial.label}
-                  className="artwork-image w-full aspect-square object-cover rounded-sm"
-                />
+                <div className="artwork-container">
+                  <img
+                    src={trial.image}
+                    alt={trial.label}
+                    className="artwork-image w-full aspect-square object-cover rounded-sm "
+                  />
+                </div>
                 <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
                   {trial.note}
                 </p>

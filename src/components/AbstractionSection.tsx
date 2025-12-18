@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 
-// import sculpture1 from "@/assets/sculpture-1.jpg";
-// import sculpture2 from "@/assets/sculpture-2.jpg";
-// import sculpture3 from "@/assets/sculpture-3.jpg";
-// import sculpture4 from "@/assets/sculpture-4.jpg";
-
-import sculpture1 from "@/assets/placeholder.png";
-import sculpture2 from "@/assets/placeholder.png";
-import sculpture3 from "@/assets/placeholder.png";
-import sculpture4 from "@/assets/placeholder.png";
+import sculpture1 from "@/assets/sculpture-1.png";
+import sculpture2 from "@/assets/sculpture-2.png";
+import sculpture3 from "@/assets/sculpture-3.png";
+import sculpture4 from "@/assets/sculpture-4.png";
 
 const AbstractionSection = () => {
   return (
@@ -31,13 +26,15 @@ const AbstractionSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-4 artwork-container"
+            className="lg:col-span-4 "
           >
-            <img
-              src={sculpture1}
-              alt="Abstract clay sculpture - Side view"
-              className="artwork-image w-full aspect-4/5 object-cover rounded-sm"
-            />
+            <div className="artwork-container">
+              <img
+                src={sculpture1}
+                alt="Abstract clay sculpture - Side view"
+                className="artwork-image w-full aspect-4/5 object-cover rounded-sm"
+              />
+            </div>
             <p className="text-primary/90 text-sm italic mt-4 leading-relaxed">
               My purpose was to explore how I can imagine a sketch creatively.
               Imagining abstract 2D shapes into a 3D model.
@@ -51,13 +48,14 @@ const AbstractionSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="artwork-container"
             >
-              <img
-                src={sculpture2}
-                alt="Abstract clay sculpture - Front view"
-                className="artwork-image w-full aspect-5/4 object-cover rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={sculpture2}
+                  alt="Abstract clay sculpture - Front view"
+                  className="artwork-image w-full aspect-5/4 object-cover rounded-sm"
+                />
+              </div>
             </motion.div>
 
             <motion.div
@@ -65,13 +63,14 @@ const AbstractionSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="artwork-container"
             >
-              <img
-                src={sculpture4}
-                alt="Abstract clay sculpture - Sitting pose"
-                className="artwork-image w-full aspect-5/4 object-cover rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={sculpture4}
+                  alt="Abstract clay sculpture - Sitting pose"
+                  className="artwork-image w-full aspect-5/4 object-cover rounded-sm"
+                />
+              </div>
             </motion.div>
           </div>
 
@@ -81,13 +80,15 @@ const AbstractionSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-4 artwork-container"
+            className="lg:col-span-4 "
           >
-            <img
-              src={sculpture3}
-              alt="Abstract clay sculpture - With shadow"
-              className="artwork-image w-full aspect-4/5 object-cover rounded-sm"
-            />
+            <div className="artwork-container">
+              <img
+                src={sculpture3}
+                alt="Abstract clay sculpture - With shadow"
+                className="artwork-image w-full aspect-4/5 object-cover rounded-sm"
+              />
+            </div>
             <div className="mt-4 space-y-1">
               <p className="text-foreground text-sm">Abstract sculpture</p>
               <p className="text-muted-foreground text-xs">

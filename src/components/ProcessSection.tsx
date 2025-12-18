@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 
-// import processSketch from "@/assets/process-sketch.jpg";
-// import processDigital from "@/assets/process-digital.jpg";
-// import processClay1 from "@/assets/process-clay1.jpg";
-// import processClay2 from "@/assets/process-clay2.jpg";
-
-import processSketch from "@/assets/placeholder.png";
-import processDigital from "@/assets/placeholder.png";
-import processClay1 from "@/assets/placeholder.png";
-import processClay2 from "@/assets/placeholder.png";
+import processSketch from "@/assets/process-sketch.png";
+import processDigital from "@/assets/process-digital.png";
+import processClay1 from "@/assets/process-clay1.png";
+import processClay2 from "@/assets/process-clay2.png";
 
 const steps = [
   "Sketching a bull.",
@@ -32,15 +27,16 @@ const ProcessSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="artwork-container"
             >
-              <img
-                src={processSketch}
-                alt="Pencil sketch of bull"
-                className="artwork-image w-full rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={processSketch}
+                  alt="Pencil sketch of bull"
+                  className="artwork-image w-full rounded-sm"
+                />
+              </div>
               <p className="text-muted-foreground text-xs mt-2">
-                A4 – pencil sketch
+                A4 - pencil sketch
               </p>
             </motion.div>
 
@@ -49,16 +45,18 @@ const ProcessSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="artwork-container"
+              className=""
             >
-              <img
-                src={processDigital}
-                alt="Digital trace over"
-                className="artwork-image w-full rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={processDigital}
+                  alt="Digital trace over"
+                  className="artwork-image w-full rounded-sm"
+                />
+              </div>
               <div className="flex justify-between mt-2">
                 <p className="text-muted-foreground text-xs">
-                  A4 – digital trace over
+                  A4 - digital trace over
                 </p>
                 <p className="text-primary text-xs">Software: Krita</p>
               </div>
@@ -98,11 +96,13 @@ const ProcessSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="artwork-container"
             >
-              <img
-                src={processClay1}
-                alt="Initial clay structure"
-                className="artwork-image w-full rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={processClay1}
+                  alt="Initial clay structure"
+                  className="artwork-image w-full rounded-sm"
+                />
+              </div>
               <div className="flex justify-between mt-2">
                 <p className="text-muted-foreground text-xs">
                   Initial clay structure
@@ -120,11 +120,13 @@ const ProcessSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="artwork-container"
             >
-              <img
-                src={processClay2}
-                alt="Bull head models"
-                className="artwork-image w-full rounded-sm"
-              />
+              <div className="artwork-container">
+                <img
+                  src={processClay2}
+                  alt="Bull head models"
+                  className="artwork-image w-full rounded-sm"
+                />
+              </div>
               <div className="flex justify-between mt-2">
                 <p className="text-muted-foreground text-xs">
                   Bull head models

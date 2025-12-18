@@ -1,22 +1,13 @@
 import { motion } from "framer-motion";
 
-// import stillLife1 from "@/assets/still-life-1.jpg";
-// import portrait1 from "@/assets/portrait-1.jpg";
-// import sketch1 from "@/assets/sketch-1.jpg";
-// import streetPainting from "@/assets/street-painting.jpg";
-// import autoRideMain from "@/assets/auto-ride-main.jpg";
-// import monoprintMain from "@/assets/monoprint-main.jpg";
-// import sculpture1 from "@/assets/sculpture-1.jpg";
-// import processSketch from "@/assets/process-sketch.jpg";
-
-import stillLife1 from "@/assets/placeholder.png";
-import portrait1 from "@/assets/placeholder.png";
-import sketch1 from "@/assets/placeholder.png";
-import streetPainting from "@/assets/placeholder.png";
-import autoRideMain from "@/assets/placeholder.png";
-import monoprintMain from "@/assets/placeholder.png";
-import sculpture1 from "@/assets/placeholder.png";
-import processSketch from "@/assets/placeholder.png";
+import stillLife1 from "@/assets/still-life-1.png";
+import portrait1 from "@/assets/portrait-1.png";
+import sketch1 from "@/assets/sketch-1.png";
+import streetPainting from "@/assets/street-painting.png";
+import autoRideMain from "@/assets/auto-ride-main.png";
+import monoprintMain from "@/assets/monoprint-main.png";
+import sculpture1 from "@/assets/sculpture-1.png";
+import processSketch from "@/assets/process-sketch.png";
 
 interface ContentsItem {
   id: number;

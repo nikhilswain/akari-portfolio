@@ -9,21 +9,14 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 // Import artwork images
-// import stillLife1 from "@/assets/still-life-1.jpg";
-// import stillLife2 from "@/assets/still-life-2.jpg";
-// import portrait1 from "@/assets/portrait-1.jpg";
-// import portrait2 from "@/assets/portrait-2.jpg";
-// import sketch1 from "@/assets/sketch-1.jpg";
-// import sketch2 from "@/assets/sketch-2.jpg";
-// import streetPainting from "@/assets/street-painting.jpg";
-
-import stillLife1 from "@/assets/placeholder.png";
-import stillLife2 from "@/assets/placeholder.png";
-import portrait1 from "@/assets/placeholder.png";
-import portrait2 from "@/assets/placeholder.png";
-import sketch1 from "@/assets/placeholder.png";
-import sketch2 from "@/assets/placeholder.png";
-import streetPainting from "@/assets/placeholder.png";
+import stillLife1 from "@/assets/still-life-1.png";
+import stillLife2 from "@/assets/still-life-2.png";
+import portrait1 from "@/assets/portrait-1.png";
+import portrait2 from "@/assets/portrait-2.png";
+import sketch1 from "@/assets/sketch-1.png";
+import sketch2 from "@/assets/sketch-2.png";
+import sketch3 from "@/assets/sketch-3.png";
+import streetPainting from "@/assets/street-painting.png";
 
 const Home = () => {
   return (
@@ -69,7 +62,7 @@ const Home = () => {
         artworks={[
           { image: sketch1, caption: "A5 - Ink drawing" },
           { image: sketch2, caption: "A5 - Ink painting" },
-          { image: sketch2, caption: "A5 - Ink and water color" },
+          { image: sketch3, caption: "A5 - Ink and water color" },
         ]}
         layout="flex"
       />
@@ -84,7 +77,6 @@ const Home = () => {
           {
             image: streetPainting,
             caption: "A3 - Watercolour and gouache painting",
-            size: "Size: 16inch x 20inch",
           },
         ]}
         layout="featured"
