@@ -2,9 +2,9 @@ import HeroSection from "@/components/HeroSection";
 import ContentsGrid from "@/components/ContentsGrid";
 import ArtworkSection from "@/components/ArtworkSection";
 import AutoRideSection from "@/components/AutoRideSection";
-import AbstractionSection from "@/components/AbstractionSection";
+// import AbstractionSection from "@/components/AbstractionSection";
 import MonoprintTrialsSection from "@/components/MonoprintTrialsSection";
-import ProcessSection from "@/components/ProcessSection";
+// import ProcessSection from "@/components/ProcessSection";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
