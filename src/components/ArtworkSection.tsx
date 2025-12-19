@@ -5,6 +5,7 @@ interface Artwork {
   image: string;
   caption: string;
   size?: string;
+  description?: string;
 }
 
 interface ArtworkSectionProps {
@@ -148,7 +149,13 @@ const ArtworkSection = ({
                     className="artwork-image rounded-sm"
                   />
                 </div>
-                <p className="caption-text mt-4">{artwork.caption}</p>
+                <p className="text-sm mt-3">{artwork.description}</p>
+                <div className="flex justify-between items-center mt-3">
+                  <p className="caption-text text-sm">{artwork.caption}</p>
+                  {artwork.size && (
+                    <p className="text-primary text-sm">{artwork.size}</p>
+                  )}
+                </div>
               </motion.div>
             ))}
           </div>
