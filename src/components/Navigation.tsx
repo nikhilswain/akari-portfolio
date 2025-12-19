@@ -3,14 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Still Life", href: "#still-life" },
-  { label: "Portraits", href: "#portraits" },
   { label: "Sketches", href: "#sketches" },
   { label: "Street Art", href: "#street-art" },
+  { label: "Photography", href: "#photography" },
+  { label: "Start & End", href: "#start-and-end" },
   { label: "Auto Ride", href: "#auto-ride" },
   { label: "Monoprints", href: "#monoprint-trials" },
-  { label: "Abstraction", href: "#abstraction" },
-  { label: "Process", href: "#process" },
+  { label: "Newsletter Design", href: "#newsletter" },
+  { label: "Still Life", href: "#still-life" },
+  { label: "Portraits", href: "#portraits" },
+  // { label: "Abstraction", href: "#abstraction" },
+  // { label: "Process", href: "#process" },
 ];
 
 const Navigation = () => {

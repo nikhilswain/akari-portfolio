@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface Artwork {
   image: string;
-  caption: string;
+  caption?: string;
   size?: string;
   description?: string;
   imageHeight?: number;
@@ -16,6 +16,8 @@ interface ArtworkSectionProps {
   description: string;
   artworks: Artwork[];
   layout?: "grid" | "featured" | "asymmetric" | "flex";
+  gap?: string;
+  alignment?: "top" | "center" | "bottom";
 }
 
 const ArtworkSection = ({
@@ -24,15 +26,15 @@ const ArtworkSection = ({
   description,
   artworks,
   layout = "grid",
+  gap = "gap-4 md:gap-8",
+  alignment = "top",
 }: ArtworkSectionProps) => {
   return (
     <section id={id} className="py-16 md:py-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div
           className={cn(
-            layout === "flex"
-              ? ""
-              : "grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12"
+            layout === "flex" ? "" : `grid grid-cols-1 lg:grid-cols-12 ${gap}`
           )}
         >
           {/* Artworks Grid */}
@@ -137,7 +139,15 @@ const ArtworkSection = ({
 
       <div className="max-w-7xl mx-auto">
         {layout === "flex" && (
-          <div className="flex flex-wrap gap-4 mt-4 ">
+          <div
+            className={`flex flex-wrap mt-4 ${gap} ${
+              alignment === "center"
+                ? "items-center"
+                : alignment === "bottom"
+                ? "items-end"
+                : "items-start"
+            }`}
+          >
             {artworks.map((artwork, index) => (
               <motion.div
                 key={index}

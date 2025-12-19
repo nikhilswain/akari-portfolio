@@ -6,8 +6,9 @@ import sketch1 from "@/assets/sketch-1.png";
 import streetPainting from "@/assets/street-painting.png";
 import autoRideMain from "@/assets/auto-ride-main.png";
 import monoprintMain from "@/assets/monoprint-main.png";
-import sculpture1 from "@/assets/sculpture-1.png";
-import processSketch from "@/assets/process-sketch.png";
+import photography from "@/assets/photography-1.png";
+import newsletter1 from "@/assets/newsletter-1.png";
+import startAndEndCollage from "@/assets/start-and-end-collage.png";
 
 interface ContentsItem {
   id: number;
@@ -17,14 +18,19 @@ interface ContentsItem {
 }
 
 const contents: ContentsItem[] = [
-  { id: 1, title: "Still Life", image: stillLife1, sectionId: "still-life" },
-  { id: 2, title: "Portraits", image: portrait1, sectionId: "portraits" },
-  { id: 3, title: "Sketches", image: sketch1, sectionId: "sketches" },
+  { id: 1, title: "Sketches", image: sketch1, sectionId: "sketches" },
   {
-    id: 4,
+    id: 2,
     title: "Street Art",
     image: streetPainting,
     sectionId: "street-art",
+  },
+  { id: 3, title: "Photography", image: photography, sectionId: "photography" },
+  {
+    id: 4,
+    title: "Start & End",
+    image: startAndEndCollage,
+    sectionId: "start-and-end",
   },
   { id: 5, title: "Auto Ride", image: autoRideMain, sectionId: "auto-ride" },
   {
@@ -33,8 +39,15 @@ const contents: ContentsItem[] = [
     image: monoprintMain,
     sectionId: "monoprint-trials",
   },
-  { id: 7, title: "Abstraction", image: sculpture1, sectionId: "abstraction" },
-  { id: 8, title: "Process", image: processSketch, sectionId: "process" },
+  {
+    id: 7,
+    title: "Newsletter Cover Design",
+    image: newsletter1,
+    sectionId: "newsletter",
+  },
+  { id: 8, title: "Still Life", image: stillLife1, sectionId: "still-life" },
+  { id: 9, title: "Portraits", image: portrait1, sectionId: "portraits" },
+  // { id: 10, title: "Abstraction", image: sculpture1, sectionId: "abstraction" },
 ];
 
 const ContentsGrid = () => {

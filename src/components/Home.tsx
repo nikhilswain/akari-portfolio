@@ -27,10 +27,13 @@ import brainStorming3 from "@/assets/brain-storming-3.png";
 import brainStorming4 from "@/assets/brain-storming-4.png";
 import brainStorming5 from "@/assets/brain-storming-5.png";
 import brainStorming6 from "@/assets/brain-storming-6.png";
+import newsletter1 from "@/assets/newsletter-1.png";
+import newsletter2 from "@/assets/newsletter-2.png";
+import newsletter3 from "@/assets/newsletter-3.png";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-hidden">
       <Navigation />
 
       <HeroSection />
@@ -167,7 +170,25 @@ const Home = () => {
 
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
-      {/* news letter */}
+      <ArtworkSection
+        id="newsletter"
+        title="Newsletter Cover Design:"
+        description="This was a newsletter cover design for my School's Student Newsletter. I wanted to showcase eye-catching contrast with a playful theme as an attention-grabbing design."
+        gap="gap-4 md:gap-12"
+        alignment="center"
+        artworks={[
+          { image: newsletter1, size: "Initial sketch" },
+          {
+            image: newsletter2,
+            caption: "A4 - Digital Illustrations",
+            size: "Software: Photoshop",
+          },
+          { image: newsletter3 },
+        ]}
+        layout="flex"
+      />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <ArtworkSection
         id="still-life"
@@ -194,12 +215,12 @@ const Home = () => {
       />
 
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
+      {/* 
       <AbstractionSection />
 
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
-      <ProcessSection />
+      <ProcessSection /> */}
 
       <Footer />
     </div>
