@@ -20,6 +20,13 @@ import streetPainting from "@/assets/street-painting.png";
 import photography1 from "@/assets/photography-1.png";
 import photography2 from "@/assets/photography-2.png";
 import photography3 from "@/assets/photography-3.png";
+import startAndEndCollage from "@/assets/start-and-end-collage.png";
+import brainStorming1 from "@/assets/brain-storming-1.png";
+import brainStorming2 from "@/assets/brain-storming-2.png";
+import brainStorming3 from "@/assets/brain-storming-3.png";
+import brainStorming4 from "@/assets/brain-storming-4.png";
+import brainStorming5 from "@/assets/brain-storming-5.png";
+import brainStorming6 from "@/assets/brain-storming-6.png";
 
 const Home = () => {
   return (
@@ -90,6 +97,79 @@ const Home = () => {
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <ArtworkSection
+        id="start-and-end"
+        title="The Start and End Of The Day:"
+        description="From dusk to dawn, the tea stall serves as a common break at both the end and start of the day. It brings together people from different backgrounds. The collage medium reflects this joining of pieces into a shared space."
+        artworks={[
+          {
+            image: startAndEndCollage,
+            caption: `Paper Collage`,
+            size: "Size: A3",
+          },
+        ]}
+        layout="featured"
+      />
+
+      <ArtworkSection
+        id="brainstorming"
+        title="Brainstorming:"
+        description="Exploring proportion and varied compositions as a foundation before moving into a free-flowing collage process."
+        artworks={[
+          {
+            image: brainStorming1,
+            imageHeight: 400,
+            caption: `A3 Digital Sketching`,
+            size: "Software: Photoshop",
+          },
+          {
+            image: brainStorming2,
+            imageHeight: 400,
+            caption: `A3 Digital Sketching`,
+            size: "Software: Photoshop",
+          },
+          {
+            image: brainStorming3,
+            imageHeight: 400,
+            caption: `Approx A5`,
+            size: "Initial Sketching",
+          },
+          {
+            image: brainStorming4,
+            imageHeight: 400,
+            caption: `Approx A5`,
+            size: "Initial Sketching",
+          },
+          {
+            image: brainStorming5,
+            imageHeight: 400,
+            caption: `Approx A5`,
+            size: "Initial Sketching",
+          },
+          {
+            image: brainStorming6,
+            imageHeight: 400,
+            caption: `Approx A5`,
+            size: "Initial Sketching",
+          },
+        ]}
+        layout="flex"
+      />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+      <AutoRideSection />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+      <MonoprintTrialsSection />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+      {/* news letter */}
+
+      <ArtworkSection
         id="still-life"
         title="Still Life Drawing:"
         description="I've used graphite pencils to draw these observational drawings of objects around my house. I've set up the objects according to the pictures I found online."
@@ -112,14 +192,6 @@ const Home = () => {
         ]}
         layout="grid"
       />
-
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
-      <AutoRideSection />
-
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
-      <MonoprintTrialsSection />
 
       <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 

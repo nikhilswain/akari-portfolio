@@ -6,6 +6,8 @@ interface Artwork {
   caption: string;
   size?: string;
   description?: string;
+  imageHeight?: number;
+  imageWidth?: number;
 }
 
 interface ArtworkSectionProps {
@@ -68,19 +70,22 @@ const ArtworkSection = ({
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
-                className="artwork-container"
               >
-                <img
-                  src={artworks[0].image}
-                  alt={artworks[0].caption}
-                  className="artwork-image w-full rounded-sm"
-                />
-                <p className="caption-text mt-4">{artworks[0].caption}</p>
-                {artworks[0].size && (
-                  <p className="text-xs text-muted-foreground mt-1">
-                    {artworks[0].size}
-                  </p>
-                )}
+                <div className="artwork-container">
+                  <img
+                    src={artworks[0].image}
+                    alt={artworks[0].caption}
+                    className="artwork-image w-full rounded-sm"
+                  />
+                </div>
+                <div className="flex justify-between mt-3">
+                  <p className="caption-text">{artworks[0].caption}</p>
+                  {artworks[0].size && (
+                    <p className="text-xs text-muted-foreground">
+                      {artworks[0].size}
+                    </p>
+                  )}
+                </div>
               </motion.div>
             )}
 
@@ -132,7 +137,7 @@ const ArtworkSection = ({
 
       <div className="max-w-7xl mx-auto">
         {layout === "flex" && (
-          <div className="flex flex-wrap gap-4 mt-4">
+          <div className="flex flex-wrap gap-4 mt-4 ">
             {artworks.map((artwork, index) => (
               <motion.div
                 key={index}
@@ -140,13 +145,21 @@ const ArtworkSection = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="md:flex-1"
+                className="md:flex-1 min-w-xs"
               >
                 <div className="artwork-container">
                   <img
                     src={artwork.image}
                     alt={artwork.caption}
-                    className="artwork-image rounded-sm"
+                    className={`artwork-image rounded-sm `}
+                    style={{
+                      height: artwork.imageHeight
+                        ? `${artwork.imageHeight}px`
+                        : undefined,
+                      width: artwork.imageWidth
+                        ? `${artwork.imageWidth}px`
+                        : undefined,
+                    }}
                   />
                 </div>
                 <p className="text-sm mt-3">{artwork.description}</p>
